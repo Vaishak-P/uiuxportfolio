@@ -57,7 +57,7 @@ const Hero = () => {
           <div
             data-aos="zoom-in"
             data-aos-delay="400"
-            className="mx-auto hidden lg:block rounded-[3rem] shadow-lg overflow-x-hidden"
+            className="mx-auto hidden lg:block rounded-[3rem]  overflow-x-hidden"
           >
             <Image
               src={BaseInfo.profilePic}
