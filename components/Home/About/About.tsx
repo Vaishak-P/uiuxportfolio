@@ -1,7 +1,7 @@
-import SectionHeading from '@/components/Helper/SectionHeading'
-import { aboutInfo } from '@/Data/data'
-import React from 'react'
-import { FaGithub, FaGraduationCap, FaLinkedin } from 'react-icons/fa'
+import SectionHeading from "@/components/Helper/SectionHeading";
+import { aboutInfo } from "@/Data/data";
+import React from "react";
+import { FaBehance, FaGraduationCap, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -50,12 +50,12 @@ const About = () => {
               </a>
 
               <a
-                href="https://github.com/Vaishak-P"
+                href="https://www.behance.net/v4vaishu"
                 target="_blank"
                 rel="noreferrer"
               >
                 <div className="flex p-5 bg-highDark rounded-full">
-                  <FaGithub className="text-secondary font-bold text-3xl" />
+                  <FaBehance className="text-secondary font-bold text-3xl" />
                   {/* <p className="p-2 text-lowWhite">vaishakpanakkat</p> */}
                 </div>
               </a>
@@ -76,6 +76,6 @@ const About = () => {
       </div>
     </div>
   );
-}
+};
 
-export default About
+export default About;

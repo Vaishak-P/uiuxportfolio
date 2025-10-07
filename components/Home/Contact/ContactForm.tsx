@@ -1,9 +1,13 @@
+"use client";
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
-  const [notification, setNotification] = useState<{ message: string; type: "success" | "error" } | null>(null);
+  const [notification, setNotification] = useState<{
+    message: string;
+    type: "success" | "error";
+  } | null>(null);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
@@ -106,16 +110,11 @@ const ContactForm = () => {
 
 export default ContactForm;
 
-
-
-
-
 // ---------------------------------
-// BEFORE EMAILJS IMPLEMENTATION 
+// BEFORE EMAILJS IMPLEMENTATION
 // ---------------------------------
 // import React, { useRef } from "react";
 // import emailjs from "@emailjs/browser";
-
 
 // const ContactForm = () => {
 //   const form = useRef(null);
@@ -154,7 +153,7 @@ export default ContactForm;
 //           <input
 //             type="text"
 //             placeholder="First Name"
-//             className="flex-1 bg-pureBlack text-lowWhite 
+//             className="flex-1 bg-pureBlack text-lowWhite
 //                     placeholder:text-lowWhite px-6 py-3 rounded-md border-secondary border-opacity-80 border-2
 //                     outline-none w-full"
 //             onChange={handleChange}
@@ -162,7 +161,7 @@ export default ContactForm;
 //           <input
 //             type="text"
 //             placeholder="Last Name"
-//             className="flex-1 bg-pureBlack text-lowWhite 
+//             className="flex-1 bg-pureBlack text-lowWhite
 //                     placeholder:text-lowWhite px-6 py-3 rounded-md border-secondary border-opacity-80 border-2
 //                     outline-none w-full"
 //             onChange={handleChange}
@@ -172,7 +171,7 @@ export default ContactForm;
 //           <input
 //             type="email"
 //             placeholder="Email Address"
-//             className="flex-1 bg-pureBlack text-lowWhite 
+//             className="flex-1 bg-pureBlack text-lowWhite
 //                     placeholder:text-lowWhite px-6 py-3 rounded-md border-primary border-opacity-80 border-2
 //                     outline-none w-full"
 //             onChange={handleChange}
@@ -180,7 +179,7 @@ export default ContactForm;
 //           <input
 //             type="text"
 //             placeholder="Phone Number"
-//             className="flex-1 bg-pureBlack text-lowWhite 
+//             className="flex-1 bg-pureBlack text-lowWhite
 //                     placeholder:text-lowWhite px-6 py-3 rounded-md border-primary border-opacity-80 border-2
 //                     outline-none w-full"
 //             onChange={handleChange}
@@ -203,7 +202,7 @@ export default ContactForm;
 //         <textarea
 //           rows={7}
 //           placeholder="Message"
-//           className="w-full mt-5 bg-pureBlack text-lowWhite placeholder:text-lowWhite px-4 py-3.5 rounded-md 
+//           className="w-full mt-5 bg-pureBlack text-lowWhite placeholder:text-lowWhite px-4 py-3.5 rounded-md
 //           border-primary border-opacity-80 border-2 outline-none"
 //           onChange={handleChange}
 //         ></textarea>

@@ -1,7 +1,7 @@
-import { BaseInfo } from '@/Data/data'
-import Image from 'next/image';
-import React from 'react'
-import { FaDownload } from 'react-icons/fa';
+import { BaseInfo } from "@/Data/data";
+import Image from "next/image";
+import React from "react";
+import { FaDownload } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -25,8 +25,8 @@ const Hero = () => {
               data-aos-easing="ease-in-sine"
               data-aos-duration="500"
               data-aos-delay="400"
-              className="text-bg text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold 
-                    md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[4rem] text-lowWhite"
+              className="text-bg text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold 
+                    md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[6rem] text-lowWhite"
             >
               {BaseInfo.position}
             </h1>
@@ -57,19 +57,19 @@ const Hero = () => {
           <div
             data-aos="zoom-in"
             data-aos-delay="400"
-            className="mx-auto hidden lg:block rounded-[3rem] shadow-lg  shadow-primary overflow-x-hidden"
+            className="mx-auto hidden lg:block rounded-[3rem] shadow-lg overflow-x-hidden"
           >
             <Image
               src={BaseInfo.profilePic}
               alt={BaseInfo.name}
-              width={500}
-              height={500}
+              width={450}
+              height={450}
             />
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;
